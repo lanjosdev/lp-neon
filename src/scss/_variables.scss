@@ -1,0 +1,38 @@
+// Fontes:
+$font-main: 'Inter';
+$font-headers: 'Poppins';
+
+
+// Cores:
+$brand-blue: #0073CE;
+$brand-light-blue: #00A5F0;
+$brand-green-light: #00D7D7;
+$brand-yellow: #FFC800;
+
+// Escalas de cinza:
+$w: #fff;
+$gray-100: #F1F0F5;
+$gray-200: #C6C5CE;
+$gray-300: #7A7786;
+$gray-400: #5F5C6B;
+$gray-500: #4E4B59;
+$gray-600: #33303E;
+$b: #000;
+
+
+// Mixins:
+@mixin spacing-section() {
+    padding: 60px 20px;
+
+    @media screen and (max-width: 480px) {
+        padding: 40px 15px;
+    }
+}
+@mixin spacing-lateral() {
+    padding: 0 20px;
+
+    @media screen and (max-width: 480px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
