@@ -6,3 +6,82 @@
     margin: 0 auto;
 }
 /* GRID LAYOUT */
+
+// COMPONENTES:
+.card-depoimento {
+    background-color: rgba(241, 240, 245, 0.55);
+    width: 100%;
+    max-width: 38.4rem;
+    padding: 3.7rem 3rem 2.3rem 3.2rem;
+    border-radius: 8px;
+
+    .user {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 2.1rem;
+
+        span {
+            color: $gray-500;
+            font-family: $font-headers, sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 112%; /* 20.16px */
+            letter-spacing: -1px;
+        }
+        img {
+            margin-right: 1.37rem;
+        }
+    }
+
+    p {
+        color: $gray-400;
+    }
+}
+
+
+.btn-primary, .btn-secondary {
+    text-align: center;
+    font-family: $font-headers, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    // line-height: 100%; /* 16px */
+    border-radius: 122px;
+}
+
+.btn-primary {
+    background-color: $brand-yellow;
+    color: #855B35;
+    height: 4.8rem;
+    padding: 0 2.6rem;
+
+    transition: all .3s ease;
+    &:hover {
+        filter: brightness(1.15);
+    }
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid $brand-light-blue;
+    color: $brand-light-blue;
+    height: 4.1rem;
+    padding: 0 1.8rem;
+
+    transition: all .3s ease;
+    &:hover {
+        background-color: $brand-light-blue;
+        color: $w;
+    }
+
+    &.white {
+        border: 1px solid $w;
+        color: $w;
+
+        &:hover {
+            background-color: $w;
+            color: $brand-light-blue;
+        }
+    }
+}

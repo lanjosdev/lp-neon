@@ -1,0 +1,39 @@
+h1, h2, h3, h4 {
+    font-family: $font-headers, sans-serif;
+    color: $gray-500;
+}
+
+
+h1, h2 {
+    letter-spacing: -1px;
+    line-height: 112%;
+}
+h1 {
+    font-size: 6.4rem;
+    font-weight: 600;
+}
+h2 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+
+h3, h4 {
+    letter-spacing: -0.5px;
+    font-weight: 500;
+}
+h3 {
+    font-size: 2.4rem;
+    line-height: 150%;
+}
+h4 {
+    font-size: 2rem;
+    line-height: 112%;
+}
+
+
+p {
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: $gray-300;
+}
