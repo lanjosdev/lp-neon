@@ -1,17 +1,18 @@
 header {
     @include spacing-lateral();
-    background-color: $brand-blue;
+    // background-color: $brand-blue;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 8.8rem;
+    z-index: 100;
 
     display: flex;
     align-items: center;
     color: $w;
 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.226);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.226);
 
     .grid {
         display: flex;
