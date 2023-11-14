@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="./src/css/styles.css">
     <title>Landing Page Neon</title>
 </head>
@@ -171,5 +176,86 @@
         
         </div>
     </section>
+
+    <section class="s-depoimentos">
+        <div class="grid">
+
+        <div class="top">
+            <h2>
+                Prático, fácil, moderno
+                <span>Você resolve tudo sem estresse <img src="./src/assets/smile.svg" alt=""></span>
+            </h2>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="slide-depoimentos">
+            <!-- Swiper -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card-depoimento">
+                        <div class="user">
+                            <span>@marciogurka</span>
+                            <img src="./src/assets/icon-twiiter.svg" alt="Icone do twitter">
+                        </div>
+                        <p>Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco #bancoNeon</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-depoimento">
+                        <div class="user">
+                            <span>@kleriene18</span>
+                            <img src="./src/assets/icon-twiiter.svg" alt="Icone do twitter">
+                        </div>
+                        <p>Eu uso o Neon pra render o pouquinho que eu tenho. Como disse minha amiga Bruna, um dia eu abro o app de novo e PA: tô rica.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-depoimento">
+                        <div class="user">
+                            <span>@mzltweet</span>
+                            <img src="./src/assets/icon-twiiter.svg" alt="Icone do twitter">
+                        </div>
+                        <p>Só por ter um cartão virtual com bloqueio fácil no app, já ganha e muito na segurançã pro cliente.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-depoimento">
+                        <div class="user">
+                            <span>@marciogurka</span>
+                            <img src="./src/assets/icon-twiiter.svg" alt="Icone do twitter">
+                        </div>
+                        <p>Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco #bancoNeon</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-depoimento">
+                        <div class="user">
+                            <span>@carolhot</span>
+                            <img src="./src/assets/icon-twiiter.svg" alt="Icone do twitter">
+                        </div>
+                        <p>Eu uso o Neon pra render o pouquinho que eu tenho. Como disse minha amiga Cacau, um dia eu abro o app de novo e PA: tô rica.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".slide-depoimentos", {
+            slidesPerView: 3,
+            spaceBetween: 32,
+            pagination: {
+                el: ".s-depoimentos .top .swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>

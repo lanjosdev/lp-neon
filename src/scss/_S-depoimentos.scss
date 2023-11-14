@@ -1,0 +1,55 @@
+.s-depoimentos {
+    @include spacing-lateral();
+    padding-top: 13.4rem;
+
+    .top {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+        h2 {
+            color: $gray-200;
+            font-weight: 700;
+
+            span {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                margin-top: 1.4rem;
+                color: $gray-600;
+
+                img {
+                    width: 3.8rem;
+                    height: 3.8rem;
+                }
+            }
+        }
+
+        // estilo paginação Swiper
+        .swiper-pagination {
+            position: relative;
+            max-width: fit-content;
+
+            .swiper-pagination-bullet {
+                background-color: $brand-yellow;
+                margin: 0;
+                &:not(:first-child) {
+                    margin-left: .431rem;
+                }
+                
+                width: .8615rem;
+                height: .7rem;
+                border-radius: 12px;
+
+                transition: all .3s ease;
+                &-active {
+                    width: 1.7231rem;
+                }               
+            }
+        }
+    }
+
+    .slide-depoimentos {
+        overflow: hidden;
+    }
+}
