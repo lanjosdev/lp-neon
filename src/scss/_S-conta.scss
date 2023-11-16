@@ -1,0 +1,84 @@
+.s-conta {
+    @include spacing-lateral();
+    padding-top: 12.7rem;
+    padding-bottom: 8.59rem;
+
+    .grid {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .info {
+        width: 100%;
+        max-width: 54.2rem;
+        margin-top: .7rem;
+
+        h2 {
+            color: $gray-600;
+            font-weight: 700;
+            margin-bottom: 4.5rem;
+            span {
+                display: block;
+                color: $gray-200;
+                font-weight: 600;
+
+                margin-bottom: .9rem;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 3.7rem;
+            margin-bottom: 4.9rem;
+
+            li {
+                display: flex;
+                gap: 2.6rem;
+
+                .icon {
+                    background-color: $brand-green-light;
+                    min-width: 4.5rem;
+                    height: 4.5rem;
+                    border-radius: 8px;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .text {
+                    h4 {
+                        color: $gray-400;
+                        margin-bottom: .4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .ilustra {
+        position: relative;
+        width: 100%;
+        max-width: 71.2rem;
+        height: 59.803rem;
+        margin-right: -16.3rem;
+        // left: 12.5rem;
+
+        img {
+            position: absolute;
+
+            &.mockup1 {
+                left: 0;
+                bottom: 4.77rem;
+            }
+            &.mockup2 {
+                top: 0;
+                right: 23.3rem;
+            }
+            &.circle {
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
