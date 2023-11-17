@@ -1,0 +1,13 @@
+footer {
+    @include spacing-lateral();
+    background-color: $brand-blue;
+
+    .top-footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 4.9rem 0;
+
+        border-bottom: 2px solid rgba(73, 196, 253, 0.226);
+        margin-bottom: 5.7rem;
+    }
+}
