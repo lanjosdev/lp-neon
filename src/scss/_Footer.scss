@@ -1,6 +1,7 @@
 footer {
     @include spacing-lateral();
     background-color: $brand-blue;
+    color: $w;
 
     .top-footer {
         display: flex;
@@ -9,5 +10,111 @@ footer {
 
         border-bottom: 2px solid rgba(73, 196, 253, 0.226);
         margin-bottom: 5.7rem;
+
+        .share {
+            display: flex;
+            align-items: flex-end;
+            gap: 3rem;
+
+            span {
+                font-size: 1.4rem;
+                line-height: 125%; /* 17.5px */
+                opacity: 0.7;
+            }
+            ul {
+                display: flex;
+                gap: 3rem;
+            }
+        }
+    }
+
+    .main-footer {
+        display: flex;
+        justify-content: space-between;
+        // gap: 7.4rem;
+        padding-bottom: 6.2rem;
+        border-bottom: 2px solid rgba(73, 196, 253, 0.226);
+        margin-bottom: 3.9rem;
+        
+        nav {
+            width: 100%;
+            max-width: 86.2rem;
+            display: flex;
+            justify-content: space-between;
+
+            .item-nav {
+                strong {
+                    font-family: $font-headers, sans-serif;
+                    font-weight: 600;
+                    line-height: 125%; /* 20px */
+
+                    display: inline-block;
+                    margin-bottom: 2.5rem;
+                }
+                ul {
+                    // display: flex;
+                    // flex-direction: column;
+                    // gap: 2.9rem;
+                    li {
+                        &:not(:last-child) {
+                            margin-bottom: 2.9rem;
+                        }
+
+                        a {
+                            font-size: 1.4rem;
+                            line-height: normal;
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+        }
+
+        .btns {
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+
+            width: 100%;
+            max-width: 28rem;
+
+            button {
+                background-color: rgba(0, 164, 240, 0.24);
+                border-radius: 6px;
+                padding: 1.7rem 0 1.7rem 2.5rem;
+
+                display: flex;
+                gap: 2.4rem;
+                align-items: center;
+
+                p {
+                    color: $w;
+                    font-size: 1.4rem;
+                    text-align: left;
+
+                    span {
+                        display: block;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    .copy-footer {
+        display: flex;
+        align-items: flex-start;
+        gap: 2.5rem;
+
+        padding-bottom: 3.4rem;
+        border-bottom: 4px solid $brand-yellow;
+
+        p {
+            width: 100%;
+            max-width: 66rem;
+            color: $w;
+            font-size: 1.4rem;
+            opacity: 0.8;
+        }
     }
 }
